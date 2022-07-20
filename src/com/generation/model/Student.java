@@ -24,12 +24,12 @@ public class Student
     public void enrollToCourse( Course course )
     {
         //TODO implement this method
-        if(this.courses.contains(course)) {
+        if(courses.contains(course)) {
         System.out.println("Student already enrolled to course");
 
 }
         else{
-        this.courses.add(course);
+        courses.add(course);
 
 }
     }
@@ -43,9 +43,9 @@ public class Student
     public boolean isAttendingCourse( String courseCode )
     {
         //TODO implement this method
-        for( Course course: this.courses ){
+        for( Course course: courses ){
        String course_code = course.getCode();
-        if(course_code == courseCode){
+        if(course_code.equals(courseCode)){
         return true;
 }
     }
